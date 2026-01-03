@@ -78,5 +78,5 @@ It is not designed for operational or safety-critical deployment at this stage.
 ---
 
 ## Author
-Mehdi Bigham  
+Mahdi Bigham  
 MSc Computer Engineering  
