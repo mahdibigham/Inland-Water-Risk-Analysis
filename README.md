@@ -1,82 +1,40 @@
-# Inland Water Risk Analysis
-### Predictive Drowning Risk Assessment – Proof of Concept
+Inland Water Risk Assessment System (IWRAS)
 
-This repository presents a proof-of-concept project focused on predicting drowning risk in inland water environments such as lakes and reservoirs.
+A Proactive Safety Initiative for Non-Standard Water Bodies
 
-The goal of this work is not to detect drowning incidents after they occur, but to estimate risk levels in advance by analyzing environmental conditions. The project is intended as an early-stage applied research prototype with potential relevance for water safety, lifeguard support, and preventive decision-making systems.
+🔬 Project Context & Research Goal
 
----
+This repository hosts the Proof of Concept (PoC) for IWRAS, a research initiative aimed at shifting drowning prevention from reactive measures (rescue) to predictive safety (risk estimation).
 
-## Background
-Inland waters are often considered safer than open seas, yet drowning incidents still occur regularly in these environments. 
-Safety assessments are typically based on visual observation and individual experience, which may not fully capture rapidly changing environmental conditions.
+Unlike swimming pools, inland water bodies (dams, reservoirs, urban lakes) lack standardized supervision. This project investigates how Environmental AI can quantify safety risks in real-time.
 
-This project explores how environmental data can be translated into a simple and interpretable risk indicator that supports preventive safety decisions.
+🛠 System Architecture (Prototype)
 
----
+The current implementation (drowning_risk_simulation.py) is a deterministic simulation model written in Python. It calculates a dynamic "Risk Index" based on three weighted environmental variables:
 
-## Project Scope
-- Focus on **inland waters** (lakes, reservoirs, calm recreational waters)
-- Emphasis on **risk prediction before incidents**, not post-event detection
-- Prioritization of **interpretability and transparency** over model complexity
-- Use of synthetic or open-access data for early validation
+Surface Stability: Wind speed interaction with water surface.
 
-This repository represents an initial research step rather than a finished product.
+Physiological Stress: Hypothermia risk calculated from water temperature.
 
----
+Operational Visibility: Atmospheric visibility impacting rescue viability.
 
-## Method Overview
-The current implementation follows a structured analytical pipeline:
+🚀 Roadmap & Future Development
 
-1. Simulation or collection of environmental parameters  
-2. Feature-based risk scoring using defined assumptions  
-3. Aggregation of scores into a total risk index  
-4. Classification into qualitative risk levels:
-   - Low
-   - Medium
-   - High
+This project is currently in the Pre-Alpha / Research Phase. The development roadmap includes:
 
-The logic is intentionally kept lightweight to allow inspection, validation, and discussion.
+Phase 1 (Current): Python-based simulation of risk logic (Completed).
 
----
+Phase 2: Integration with real-world meteorological APIs (e.g., OpenWeatherMap).
 
-## Current Status
-- Proof-of-concept logic implemented
-- Synthetic data used for testing and demonstration
-- No real-world deployment or operational validation yet
+Phase 3 (Performance): Porting the core risk-calculation engine to C++.
 
-The project is under active conceptual development and is intended for academic discussion and further research.
+Objective: To deploy the system on low-power Embedded Edge Devices (IoT sensors) located at remote water sites, requiring efficient memory management and real-time processing.
 
----
+👤 About the Author
 
-## Limitations
-- Environmental data is simulated and does not represent real-time measurements
-- The model does not account for individual swimmer behavior
-- Risk thresholds are heuristic and subject to future calibration
+Mahdi Bigham
+Research Expert & Head of Open Education | National University of Skills (NUS)
 
-These limitations are acknowledged as part of the early research stage.
+With a background in University Operations and experience teaching C++ and Hardware-Oriented Programming, I focus on designing Interpretable Decision-Support Systems for safety-critical environments. My research aims to bridge the gap between theoretical safety protocols and practical, algorithmic enforcement.
 
----
-
-## Future Directions
-Possible future extensions include:
-- Integration with real-time meteorological data sources
-- Validation using real-world inland water datasets
-- Collaboration with water safety professionals
-- Exploration of wearable or augmented reality interfaces for real-time risk visualization
-
----
-
-## Intended Use
-This repository is intended for:
-- Academic research discussions
-- Research-based MSc or PhD exploration
-- Concept validation prior to real-world studies
-
-It is not designed for operational or safety-critical deployment at this stage.
-
----
-
-## Author
-Mahdi Bigham  
-MSc Computer Engineering  
+For academic inquiries or collaboration, please open an issue in this repository.
