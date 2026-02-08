@@ -1,40 +1,45 @@
-Inland Water Risk Assessment System (IWRAS)
+Inland-Water-Risk-Analysis
 
-A Proactive Safety Initiative for Non-Standard Water Bodies
+A Predictive Safety Architecture for Estimating Drowning Risk in Inland Water Bodies
 
-🔬 Project Context & Research Goal
+🔬 Project Overview
 
-This repository hosts the Proof of Concept (PoC) for IWRAS, a research initiative aimed at shifting drowning prevention from reactive measures (rescue) to predictive safety (risk estimation).
+This repository contains the Research-Grade Prototype for IWRAS (Inland Water Risk Assessment System). The project focuses on transitioning drowning prevention from reactive rescue to proactive risk modeling in non-standard environments like lakes and reservoirs.
 
-Unlike swimming pools, inland water bodies (dams, reservoirs, urban lakes) lack standardized supervision. This project investigates how Environmental AI can quantify safety risks in real-time.
+🌍 Current Focus: Lake Victoria Pilot
 
-🛠 System Architecture (Prototype)
+The current iteration is specifically calibrated for the Lake Victoria (Entebbe Region) case study, addressing the high fatality rates among artisanal fishers caused by sudden nocturnal convective storms.
 
-The current implementation (drowning_risk_simulation.py) is a deterministic simulation model written in Python. It calculates a dynamic "Risk Index" based on three weighted environmental variables:
+Key Features of the Algorithm:
 
-Surface Stability: Wind speed interaction with water surface.
+Deterministic & Fuzzy Logic: Moving beyond simple binary thresholds to continuous risk estimation.
 
-Physiological Stress: Hypothermia risk calculated from water temperature.
+Weighted Risk Vectors: Prioritizing Wind Gusts (the primary capsize factor) alongside visibility and temperature gradients.
 
-Operational Visibility: Atmospheric visibility impacting rescue viability.
+Sensor Reliability Handling: Built-in logic to manage sensor noise and data outliers, essential for safety-critical deployments.
 
-🚀 Roadmap & Future Development
+🛠 Technical Stack
 
-This project is currently in the Pre-Alpha / Research Phase. The development roadmap includes:
+Language: Python 3.x (Core Logic)
 
-Phase 1 (Current): Python-based simulation of risk logic (Completed).
+Architecture: Designed for Edge Computing (optimized for future deployment on ESP32/C++).
 
-Phase 2: Integration with real-world meteorological APIs (e.g., OpenWeatherMap).
+Logic: Interpretable Weighted Decision Support.
 
-Phase 3 (Performance): Porting the core risk-calculation engine to C++.
+🚀 Roadmap
 
-Objective: To deploy the system on low-power Embedded Edge Devices (IoT sensors) located at remote water sites, requiring efficient memory management and real-time processing.
+[x] Phase 1: Research Prototype & Logic Validation (Current).
 
-👤 About the Author
+[ ] Phase 2: Retrospective Stress-Testing with TAHMO Historical Data.
+
+[ ] Phase 3: Integration with Live API and real-time Dashboard.
+
+[ ] Phase 4: Porting to C++ for low-power embedded hardware.
+
+👤 Author
 
 Mahdi Bigham
-Research Expert & Head of Open Education | National University of Skills (NUS)
+Research Expert | National University of Skills (NUS)
+Focusing on AI for Public Safety and Smart Water Management.
 
-With a background in University Operations and experience teaching C++ and Hardware-Oriented Programming, I focus on designing Interpretable Decision-Support Systems for safety-critical environments. My research aims to bridge the gap between theoretical safety protocols and practical, algorithmic enforcement.
-
-For academic inquiries or collaboration, please open an issue in this repository.
+This is a Proof of Concept (PoC) for academic and collaborative research purposes.
