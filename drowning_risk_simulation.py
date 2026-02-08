@@ -4,7 +4,7 @@ import math
 class IWRAS_Research_Engine:
     """
     IWRAS (Inland Water Risk Assessment System) - Initial Prototype for Victoria Pilot
-    Developer: Mehdi Bigham
+    Developer: Mahdi Bigham
     Goal: Early detection of capsizing risks for small-scale artisanal fishing boats.
     """
 
